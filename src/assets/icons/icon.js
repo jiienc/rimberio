@@ -26,3 +26,5 @@ export { default as Queue } from '@mui/icons-material/QueueMusicRounded';
 export { default as Volume } from '@mui/icons-material/VolumeUpRounded';
 export { default as MiniPlayer } from '@mui/icons-material/BrandingWatermarkRounded';
 export { default as Full } from '@mui/icons-material/OpenInFullRounded';
+
+export { default as Verified } from '@mui/icons-material/VerifiedRounded';

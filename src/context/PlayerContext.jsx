@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react-hooks/exhaustive-deps */
 import { createContext, useRef, useState, useEffect } from "react";
 
 export const PlayerContext = createContext();
@@ -11,6 +9,8 @@ const PlayerContextProvider = (props) => {
 
     const [track, setTrack] = useState(null);
     const [trackName, setTrackName] = useState('');
+    const [songImage, setSongImage] = useState('');
+    const [songArtist, setSongArtist] = useState('');
     const [playStatus, setPlayStatus] = useState(false);
     const [time, setTime] = useState({
         currentTime: { second: 0, minute: 0 },
@@ -75,10 +75,12 @@ const PlayerContextProvider = (props) => {
         }
     };
 
-    const playTrack = (trackUrl, name) => {
+    const playTrack = (trackUrl, name, imageUrl, artist) => {
         if (track !== trackUrl) {
             setTrack(trackUrl);
             setTrackName(name);
+            setSongImage(imageUrl);
+            setSongArtist(artist);
             play();
         } else if (playStatus) {
             pause();
@@ -93,6 +95,8 @@ const PlayerContextProvider = (props) => {
         seekBar,
         track,
         trackName,
+        songImage,
+        songArtist,
         setTrack,
         playStatus,
         setPlayStatus,
