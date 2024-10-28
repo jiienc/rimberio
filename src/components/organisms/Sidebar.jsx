@@ -1,7 +1,7 @@
-import { Library, Search, Add } from '../assets/icons/icon.js';
-import { usePlaylistData } from '../hooks/usePlaylistData.jsx';
-import { useAlbumData } from '../hooks/useAlbumData.jsx';
-import { useArtistData } from '../hooks/useArtistData.jsx';
+import { Library, Search, Add } from '../../assets/icons/icon.js';
+import { usePlaylistData } from '../../hooks/usePlaylistData.jsx';
+import { useAlbumData } from '../../hooks/useAlbumData.jsx';
+import { useArtistData } from '../../hooks/useArtistData.jsx';
 
 const Sidebar = () => {
     const { playlistName, playlistImage, playlistOwner } = usePlaylistData('37i9dQZF1DX4V6WLWzdIgr');

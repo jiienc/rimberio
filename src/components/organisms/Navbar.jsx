@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import { assets } from '../assets/images/image.js';
-import { Home, Search, Browse} from '../assets/icons/icon.js';
+import { assets } from '../../assets/images/image.js';
+import { Home, Search, Browse} from '../../assets/icons/icon.js';
 
 const Navbar = () => {
     return (

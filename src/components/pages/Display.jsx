@@ -1,11 +1,11 @@
 import { useEffect, useRef } from 'react';
 import { Route, Routes, useLocation } from "react-router-dom";
-import DisplayHome from "./DisplayHome.jsx";
-import DisplayPlaylist from './DisplayPlaylist.jsx';
-import DisplayAlbum from './DisplayAlbum.jsx';
-import DisplayArtist from './DisplayArtist.jsx';
-import { usePlaylistData } from '../hooks/usePlaylistData.jsx';
-import { useAlbumData } from '../hooks/useAlbumData.jsx';
+import DisplayHome from "../templates/DisplayHome.jsx";
+import DisplayPlaylist from '../templates/DisplayPlaylist.jsx';
+import DisplayAlbum from '../templates/DisplayAlbum.jsx';
+import DisplayArtist from '../templates/DisplayArtist.jsx';
+import { usePlaylistData } from '../../hooks/usePlaylistData.jsx';
+import { useAlbumData } from '../../hooks/useAlbumData.jsx';
 import { useExtractColor } from "react-extract-colors";
 
 const Display = () => {

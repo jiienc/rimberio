@@ -1,10 +1,10 @@
 import { useContext } from 'react';
-import Navigation from './Navigation.jsx';
+import Navigation from '../atoms/Navigation.jsx';
 import { useParams } from 'react-router-dom';
-import { usePlaylistData } from '../hooks/usePlaylistData.jsx';
-import { useUserData } from '../hooks/useUserData.jsx';
-import { PlayerContext } from '../context/PlayerContext.jsx';
-import { Play, Add, Time } from '../assets/icons/icon.js';
+import { usePlaylistData } from '../../hooks/usePlaylistData.jsx';
+import { useUserData } from '../../hooks/useUserData.jsx';
+import { PlayerContext } from '../../context/PlayerContext.jsx';
+import { Play, Add, Time } from '../../assets/icons/icon.js';
 
 const DisplayPlaylist = () => {
     const { id } = useParams();

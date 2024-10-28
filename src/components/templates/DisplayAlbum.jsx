@@ -1,8 +1,8 @@
-import Navigation from './Navigation.jsx';
+import Navigation from '../atoms/Navigation.jsx';
 import { useParams } from 'react-router-dom';
-import { useAlbumData } from '../hooks/useAlbumData.jsx';
-import { useArtistData } from '../hooks/useArtistData.jsx';
-import { Play, Add, Time } from '../assets/icons/icon.js';
+import { useAlbumData } from '../../hooks/useAlbumData.jsx';
+import { useArtistData } from '../../hooks/useArtistData.jsx';
+import { Play, Add, Time } from '../../assets/icons/icon.js';
 
 const DisplayAlbum = () => {
     const {id} = useParams();

@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useContext, useEffect, useState } from 'react';
-import { PlayerContext } from '../context/PlayerContext.jsx';
-import { Add, Shuffle, SkipPrev, Play, Pause, SkipNext, Repeat, Slideshow, Mic, Queue, Volume, MiniPlayer, Full } from '../assets/icons/icon.js';
+import { PlayerContext } from '../../context/PlayerContext.jsx';
+import { Add, Shuffle, SkipPrev, Play, Pause, SkipNext, Repeat, Slideshow, Mic, Queue, Volume, MiniPlayer, Full } from '../../assets/icons/icon.js';
 
 const Player = () => {
     const { seekBar, seekBg, playStatus, play, pause, trackName, songImage, songArtist, audioRef } = useContext(PlayerContext);
